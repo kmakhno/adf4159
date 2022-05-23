@@ -15,11 +15,14 @@
 	)
 	(
 		// Users to add ports here
+		input  wire ref_clk_i,
+		output wire ref_clk_o,
         output wire CLK_o,
         output wire DATA_o,
         output wire LE_o,
-        input  wire MUXOUT_i,
-//        output wire TXdata_o,
+        input  wire MUXOUT_i, //Ramp completion strobe
+        input  wire TX_Ramp_Clk_i, //External ramp control clock
+        output wire TX_Ramp_Clk_o,
 //        output wire CE_o,
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -55,6 +58,9 @@
 	wire CLK_d;
 	wire DATA_d;
 	wire complete_transfer_d;
+	wire TX_Ramp_Clk_d;
+	wire Ramp_Completion_d;
+	wire ref_clk_d;
 	
 // Instantiation of Axi Bus Interface S0_AXI
 	adf4159_v1_0_S0_AXI # ( 
@@ -116,4 +122,30 @@
       .I(DATA_d)      // Buffer input
    );
 
+   IBUF TX_RAMP_CLK_I (
+      .O(TX_Ramp_Clk_d),     // Buffer output
+      .I(TX_Ramp_Clk_i)      // Buffer input (connect directly to top-level port)
+   );
+
+   OBUF TX_RAMP_CLK_O (
+      .O(TX_Ramp_Clk_o),     // Buffer output (connect directly to top-level port)
+      .I(TX_Ramp_Clk_d)      // Buffer input
+   );
+   
+   IBUF RAMP_COMPLETION_I (
+      .O(Ramp_Completion_d),     // Buffer output
+      .I(MUXOUT_i)      // Buffer input (connect directly to top-level port)
+   );
+   
+   BUFG REF_CLK_I (
+      .O(ref_clk_d), // 1-bit output: Clock output
+      .I(ref_clk_i)  // 1-bit input: Clock input
+   );
+   
+   BUFG REF_CLK_O (
+      .O(ref_clk_o), // 1-bit output: Clock output
+      .I(ref_clk_d)  // 1-bit input: Clock input
+   );
+   
+   
 	endmodule
