@@ -21,6 +21,7 @@
         output wire DATA_o,
         output wire LE_o,
         input  wire MUXOUT_i, //Ramp completion strobe
+        output wire MUXOUT_o,
         input  wire TX_Ramp_Clk_i, //External ramp control clock
         output wire TX_Ramp_Clk_o,
 //        output wire CE_o,
@@ -135,6 +136,11 @@
    IBUF RAMP_COMPLETION_I (
       .O(Ramp_Completion_d),     // Buffer output
       .I(MUXOUT_i)      // Buffer input (connect directly to top-level port)
+   );
+   
+   OBUF RAMP_COMPLETION_O (
+      .O(MUXOUT_o),     // Buffer output (connect directly to top-level port)
+      .I(Ramp_Completion_d)      // Buffer input
    );
    
    BUFG REF_CLK_I (

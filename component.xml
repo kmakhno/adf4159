@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5fa3cc4d</spirit:value>
+            <spirit:value>fb6c457e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5fa3cc4d</spirit:value>
+            <spirit:value>fb6c457e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -339,7 +339,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>594b54d2</spirit:value>
+            <spirit:value>2d42b74f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -414,6 +414,19 @@
         <spirit:name>MUXOUT_i</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>MUXOUT_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
@@ -804,7 +817,7 @@
       <spirit:file>
         <spirit:name>hdl/adf4159_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_fced9038</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f20e1ad4</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -946,8 +959,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>adf4159_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-23T14:04:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-05-23T18:08:42Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@27a551ac_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@71bf8435_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
@@ -1109,14 +1122,26 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@54c8098b_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@507c9d9a_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2b357936_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d802e09_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@991264_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@164d82c5_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@216eb873_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ae7734b_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@764d1bbb_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640447d9_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@332f7ed9_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3725212d_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75dad65b_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ae6659_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40f0fc5d_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="f631a448"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1ff53c1b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b3eaaa0a"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="0fec504a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1062f2df"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="e37444a7"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a5d5aa49"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2103e868"/>
     </xilinx:packagingInfo>
