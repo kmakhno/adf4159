@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e243d254</spirit:value>
+            <spirit:value>34cce36d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -959,8 +959,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>adf4159_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-05-23T18:08:42Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-06-16T07:58:58Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@27a551ac_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@71bf8435_ARCHIVE_LOCATION">z:/xilinx_projects/xilinx_ip/ip_repo/adf4159_1.0</xilinx:tag>
@@ -1134,13 +1134,23 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@75dad65b_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@67ae6659_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@40f0fc5d_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21055fbd_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65f7279c_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47158ef_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f61242_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c79b9c3_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2025f5b4_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3caf158d_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e93979f_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d037957_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14dc9ca2_ARCHIVE_LOCATION">c:/Users/Kostiantyn/Documents/xilinx_projects/ip_repo/ip_repo/adf4159</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="f631a448"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1ff53c1b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1062f2df"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a2c3d72b"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e37444a7"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a5d5aa49"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2103e868"/>

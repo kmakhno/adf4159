@@ -6,15 +6,33 @@
 /****************** Include Files ********************/
 #include "xil_types.h"
 #include "xstatus.h"
+#include "xil_io.h"
 
-#define ADF4159_S0_AXI_SLV_REG0_OFFSET 0
-#define ADF4159_S0_AXI_SLV_REG1_OFFSET 4
-#define ADF4159_S0_AXI_SLV_REG2_OFFSET 8
-#define ADF4159_S0_AXI_SLV_REG3_OFFSET 12
+#define ADF4159_TRANSFER_START_OFFSET  0
+#define ADF4159_TX_BUFF_OFFSET         4
+#define ADF4159_TRANSFER_STATUS_OFFSET 8
+#define ADF4159_MUXOUT_OFFSET          12
 #define ADF4159_S0_AXI_SLV_REG4_OFFSET 16
 
 
 /**************************** Type Definitions *****************************/
+/**
+ * This typedef contains configuration information for the device.
+ */
+typedef struct {
+	u16 DeviceId;		/* Unique ID  of device */
+	UINTPTR BaseAddress;	/* Device base address */
+} Adf4159_Config;
+
+typedef struct {
+	UINTPTR BaseAddress;	/* Device base address */
+	u32 IsReady;
+} Adf4159;
+
+/************************** Variable Definitions ****************************/
+
+extern Adf4159_Config Adf4159_ConfigTable[];
+
 /**
  *
  * Write a value to a ADF4159 register. A 32 bit write is performed.
@@ -76,5 +94,15 @@
  *
  */
 XStatus ADF4159_Reg_SelfTest(void * baseaddr_p);
+
+Adf4159_Config * Adf4159_LookupConfig(u16 DeviceId);
+
+XStatus Adf4159_Initialize(Adf4159 * InstancePtr, u16 DeviceId);
+
+XStatus Adf4159_CfgInitialize(Adf4159 * InstancePtr, Adf4159_Config * Config);
+
+Xstatus Adf4159_WriteReg(Adf4159 * InstancePtr, u32 reg);
+
+u32 Adf4159_ReadMuxOut(Adf4159 * InstancePtr);
 
 #endif // ADF4159_H
